@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirRocket 主题预览</title>
+    <link rel="stylesheet" href="../theme/airrocket/assets/style.css">
+    <style>
+        /* 确保布局结构 */
+        .ant-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .ant-layout-sider {
+            width: 200px;
+            min-height: 100vh;
+            flex-shrink: 0;
+        }
+        .ant-layout-content {
+            flex: 1;
+            padding: 32px;
+        }
+        .ant-menu {
+            padding: 20px 0;
+        }
+        .ant-menu-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin: 6px 16px;
+            padding: 14px 20px;
+            border-radius: 12px;
+        }
+        /* 使用新的网格布局类 */
+        .preview-platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .preview-main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+            margin-top: 32px;
+        }
+        .preview-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .preview-widgets {
+            display: grid;
+            gap: 24px;
+        }
+        @media (max-width: 1200px) {
+            .preview-main-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+        @media (max-width: 768px) {
+            .preview-platform-grid {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 16px;
+            }
+            .preview-stats-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ant-layout">
+        <!-- 现代化侧边栏 -->
+        <div class="ant-layout-sider">
+            <!-- Logo区域 -->
+            <div style="padding: 24px; text-align: center; border-bottom: 1px solid #2A2A2A;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <div style="font-size: 20px;">🚀</div>
+                    <h2 style="color: white; margin: 0; font-weight: 700;">AirRocket</h2>
+                </div>
+            </div>
+            
+            <!-- 菜单 -->
+            <div class="ant-menu">
+                <div class="ant-menu-item ant-menu-item-selected">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 16px;">📊</span>
+                        <span>仪表盘</span>
+                    </span>
+                </div>
+                <div class="ant-menu-item">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 16px;">👤</span>
+                        <span>我的账户</span>
+                    </span>
+                </div>
+                <div class="ant-menu-item">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 16px;">📱</span>
+                        <span>客户端</span>
+                    </span>
+                </div>
+                <div class="ant-menu-item">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 16px;">💰</span>
+                        <span>财务管理</span>
+                    </span>
+                </div>
+                <div class="ant-menu-item">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 16px;">🎯</span>
+                        <span>推荐返利</span>
+                    </span>
+                </div>
+                <div class="ant-menu-item">
+                    <span style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 16px;">⚙️</span>
+                        <span>设置</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 主内容区 -->
+        <div class="ant-layout-content">
+            <!-- 主要用户信息卡片 - 更大内边距 -->
+            <div class="ant-card hero-card" style="position: relative; z-index: 2;">
+                <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; position: relative; z-index: 2;">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 24px;">
+                        👤
+                    </div>
+                    <div>
+                        <h2 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">Halo, Matrix</h2>
+                        <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 14px;">服务开通</p>
+                    </div>
+                </div>
+                
+                <h1 style="color: white; margin: 0 0 24px 0; font-size: 36px; font-weight: 900; position: relative; z-index: 2;">Rocket 500GB</h1>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 24px; position: relative; z-index: 2;">
+                    <div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 12px; margin-bottom: 4px;">认证时间</div>
+                        <div style="color: white; font-weight: 600;">永久有效</div>
+                    </div>
+                    <div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 12px; margin-bottom: 4px;">使用时长</div>
+                        <div style="color: white; font-weight: 600;">无限更新</div>
+                    </div>
+                    <div>
+                        <div style="color: rgba(255,255,255,0.7); font-size: 12px; margin-bottom: 4px;">最大流量限制</div>
+                        <div style="color: white; font-weight: 600;">500 GB</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 平台下载卡片 - 使用新的网格和尺寸 -->
+            <div class="preview-platform-grid">
+                <div class="platform-card" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(29, 78, 216, 0.1) 100%); border-color: rgba(59, 130, 246, 0.3);">
+                    <div class="platform-icon" style="background: #3B82F6; color: white;">
+                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0,3.449L9.75,2.1v9.45H0V3.449z M10.949,1.949L24,0v11.4H10.949V1.949z M0,12.6h9.75v9.45L0,20.699V12.6z M10.949,12.6H24V24l-12.9-1.801L10.949,12.6z"/>
+                        </svg>
+                    </div>
+                    <h4>Windows 客户端</h4>
+                </div>
+                
+                <div class="platform-card" style="background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(126, 34, 206, 0.1) 100%); border-color: rgba(147, 51, 234, 0.3);">
+                    <div class="platform-icon" style="background: #9333EA; color: white;">
+                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.624 5.367 11.99 11.988 11.99s11.99-5.366 11.99-11.99C24.007 5.367 18.641.001 12.017.001zM12.017 20.696c-4.8 0-8.71-3.91-8.71-8.71s3.91-8.71 8.71-8.71 8.71 3.91 8.71 8.71-3.91 8.71-8.71 8.71z"/>
+                        </svg>
+                    </div>
+                    <h4>iOS 客户端</h4>
+                </div>
+                
+                <div class="platform-card" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(21, 128, 61, 0.1) 100%); border-color: rgba(34, 197, 94, 0.3);">
+                    <div class="platform-icon" style="background: #22C55E; color: white;">
+                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.6,9.48l1.84-3.18c0.16-0.31,0.04-0.69-0.26-0.85c-0.29-0.15-0.65-0.06-0.83,0.22l-1.88,3.24 c-2.86-1.21-6.08-1.21-8.94,0L5.65,5.67c-0.19-0.29-0.58-0.38-0.87-0.2C4.5,5.65,4.41,6.01,4.56,6.3L6.4,9.48 C3.3,11.25,1.28,14.44,1,18h22C22.72,14.44,20.7,11.25,17.6,9.48z M7,15.25c-0.69,0-1.25-0.56-1.25-1.25 c0-0.69,0.56-1.25,1.25-1.25S8.25,13.31,8.25,14C8.25,14.69,7.69,15.25,7,15.25z M17,15.25c-0.69,0-1.25-0.56-1.25-1.25 c0-0.69,0.56-1.25,1.25-1.25s1.25,0.56,1.25,1.25C18.25,14.69,17.69,15.25,17,15.25z"/>
+                        </svg>
+                    </div>
+                    <h4>Android 客户端</h4>
+                </div>
+                
+                <div class="platform-card" style="background: linear-gradient(135deg, rgba(107, 114, 128, 0.1) 0%, rgba(75, 85, 99, 0.1) 100%); border-color: rgba(107, 114, 128, 0.3);">
+                    <div class="platform-icon" style="background: #6B7280; color: white;">
+                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,1C5.925,1,1,5.925,1,12s4.925,11,11,11s11-4.925,11-11S18.075,1,12,1z M12,21c-4.971,0-9-4.029-9-9 s4.029-9,9-9s9,4.029,9,9S16.971,21,12,21z"/>
+                        </svg>
+                    </div>
+                    <h4>MacOS 客户端</h4>
+                </div>
+            </div>
+            
+            <!-- 主要内容网格 - 增大间距 -->
+            <div class="preview-main-grid">
+                <!-- 左侧内容 -->
+                <div>
+                    <!-- 统计卡片 - 使用新的间距 -->
+                    <div class="preview-stats-grid">
+                        <div class="ant-card stat-card">
+                            <div style="color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 8px;">账户余额</div>
+                            <div style="font-size: 24px; font-weight: 700; color: white; margin-bottom: 8px;">¥ 128.50</div>
+                            <div style="color: rgba(255,255,255,0.5); font-size: 12px;">今日消费: ¥ 12.35</div>
+                        </div>
+                        
+                        <div class="ant-card stat-card">
+                            <div style="color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 8px;">剩余流量</div>
+                            <div style="font-size: 24px; font-weight: 700; color: white; margin-bottom: 20px;">461.55 GB</div>
+                            <button class="ant-btn-primary" style="width: 100%;">充值</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 邀请好友卡片 - 更大内边距 -->
+                    <div class="ant-card" style="background: linear-gradient(135deg, #F97316 0%, #EA580C 100%); border: none; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 16px; font-size: 20px; font-weight: 700;">邀请好友</h3>
+                        <p style="color: rgba(255,255,255,0.9); margin-bottom: 24px;">赚取手续费</p>
+                        <div style="color: white; font-size: 32px; font-weight: 900; margin-bottom: 16px;">10%</div>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 24px;">立即邀请三方好友注册，可获得推荐用户手续费</p>
+                        <button class="ant-btn-primary" style="background: rgba(255,255,255,0.2); border: none;">立即分享</button>
+                    </div>
+                </div>
+                
+                <!-- 右侧小组件 - 增大间距 -->
+                <div class="preview-widgets">
+                    <!-- 促销卡片 -->
+                    <div class="ant-card promo-card" style="text-align: center; color: white; position: relative;">
+                        <div style="position: absolute; top: 20px; right: 20px; font-size: 14px; opacity: 0.9;">超级科举</div>
+                        <div style="position: absolute; top: 20px; right: 20px; font-size: 12px; margin-top: 20px;">-68天-15:-14</div>
+                        <div style="font-size: 48px; font-weight: 900; margin: 32px 0 16px 0;">7.8折</div>
+                        <div style="margin-bottom: 24px; opacity: 0.9;">EveryOne 收下这份礼物吧！</div>
+                        <button style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 600; cursor: pointer;">立即购买</button>
+                    </div>
+                    
+                    <!-- iOS须知 -->
+                    <div class="ant-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="width: 24px; height: 24px; background: #10B981; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">i</div>
+                            <span style="font-weight: 600; color: #10B981;">iOS 须知</span>
+                        </div>
+                        <p style="color: #9ca3af; font-size: 14px; margin: 0; line-height: 1.5;">iOS需要到AppStore安装正版，大陆下载软件需要应用商店领取</p>
+                    </div>
+                    
+                    <!-- 年终奖卡片 -->
+                    <div class="ant-card" style="text-align: center;">
+                        <div style="font-size: 40px; font-weight: 900; margin-bottom: 16px; display: flex; justify-content: center; align-items: center; gap: 8px;">
+                            <span style="color: #9ca3af;">20</span>
+                            <span style="color: #F97316; border: 2px solid #F97316; padding: 4px 12px; border-radius: 8px;">25</span>
+                        </div>
+                        <div style="color: white; font-weight: 600; margin-bottom: 8px;">投全额币・领年终奖</div>
+                        <div style="color: #6b7280; font-size: 12px;">您将获：活动福利礼包！恭喜 您，返利2倍！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,81 @@
+{
+    "name": "AirRocket",
+    "description": "现代化深色主题，适合科技感十足的 VPN 面板",
+    "version": "1.0.0",
+    "images": [
+        "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800"
+    ],
+    "configs": [
+        {
+            "label": "主题色调",
+            "placeholder": "选择主题的主要颜色",
+            "field_name": "theme_color",
+            "field_type": "select",
+            "select_options": {
+                "teal": "科技青色 (默认)",
+                "blue": "深蓝色",
+                "purple": "紫色",
+                "green": "绿色",
+                "orange": "橙色"
+            },
+            "default_value": "teal"
+        },
+        {
+            "label": "背景图片",
+            "placeholder": "自定义背景图片 URL (可选)",
+            "field_name": "background_url",
+            "field_type": "input"
+        },
+        {
+            "label": "侧边栏风格",
+            "placeholder": "选择侧边栏的显示风格",
+            "field_name": "sidebar_style",
+            "field_type": "select",
+            "select_options": {
+                "dark": "深色 (推荐)",
+                "darker": "极暗色"
+            },
+            "default_value": "dark"
+        },
+        {
+            "label": "动画效果",
+            "placeholder": "启用页面过渡动画",
+            "field_name": "enable_animations",
+            "field_type": "select",
+            "select_options": {
+                "true": "启用",
+                "false": "禁用"
+            },
+            "default_value": "true"
+        },
+        {
+            "label": "卡片透明度",
+            "placeholder": "调整卡片的透明程度",
+            "field_name": "card_opacity",
+            "field_type": "select",
+            "select_options": {
+                "normal": "标准",
+                "high": "高透明",
+                "low": "低透明"
+            },
+            "default_value": "normal"
+        },
+        {
+            "label": "显示统计图表",
+            "placeholder": "是否显示数据统计图表",
+            "field_name": "show_charts",
+            "field_type": "select",
+            "select_options": {
+                "true": "显示",
+                "false": "隐藏"
+            },
+            "default_value": "true"
+        },
+        {
+            "label": "自定义 HTML",
+            "placeholder": "可插入自定义的 HTML 代码，如客服代码等",
+            "field_name": "custom_html",
+            "field_type": "textarea"
+        }
+    ]
+} 
